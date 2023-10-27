@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Droid Cofe</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Droid Cofe</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">Droid Desserts
+    </string>
+    <string name="choose_a_dessert">choose a dessert</string>
+    <string name="donuts">\"Donuts are glazed and sprinkled with candy.\n</string>
+    <string name="icecream">Ice cream sandwiches have chocolate wafers and\nvanilla filling.\n</string>
+    <string name="fofy">FroYo is premium self-serve frozen\nyogur\n</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+</resources>

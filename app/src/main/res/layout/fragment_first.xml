@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="208dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="276dp"
+            android:padding="35dp"
+            android:text="@string/icecream"
+            app:layout_constraintStart_toEndOf="@+id/donut"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="208dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="456dp"
+            android:padding="35dp"
+            android:text="@string/fofy"
+            app:layout_constraintStart_toEndOf="@+id/donut"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:textStyle="italic"
+            android:id="@+id/textintro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_regular"
+            android:text="@string/lorem_ipsum"
+            android:textSize="@dimen/text_heading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/choose_dessert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/choose_a_dessert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textintro" />
+
+        <ImageView
+            android:id="@+id/donut"
+            android:layout_width="162dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/donuts"
+            android:onClick="showDonutOrder"
+            android:src="@drawable/oip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choose_dessert"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="208dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="116dp"
+            android:padding="35dp"
+            android:text="@string/donuts"
+            app:layout_constraintStart_toEndOf="@+id/donut"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:onClick="showFroyoOrder"
+            android:id="@+id/ice_cream"
+            android:layout_width="149dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/icecream"
+            android:src="@drawable/r"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donut" />
+
+        <ImageView
+            android:onClick="showIceCreamOrder"
+            android:id="@+id/imageView4"
+            android:layout_width="135dp"
+            android:layout_height="159dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="@string/fofy"
+            android:src="@drawable/aa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ice_cream" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
